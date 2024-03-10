@@ -14,13 +14,13 @@ from luma.core.render import canvas
 # Load presets
 contrast = 255
 refresh = 10
-show_logo = 'yes'
+show_logo = 'no'
 net_name = 'eth0'
-s1_name = 'sd'
+s1_name = 'mmcblk'
 s1_path = '/'
 
 # Load config file
-config_file = '/etc/sys-oled.conf'
+config_file = '/etc/default/sys-oled'
 if os.path.isfile(config_file):
     config = configparser.ConfigParser()
     config.read(config_file)

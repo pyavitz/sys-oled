@@ -7,7 +7,7 @@ display_model = ssd1306
 contrast = 255
 
 # Show Armbian logo (value: yes or no)
-show_logo = yes
+show_logo = no
 
 # Status refresh interval
 refresh = 10
@@ -18,7 +18,7 @@ network_name = eth0
 
 # Storage Device 1
 # Device name
-storage1_name = sd
+storage1_name = mmcblk
 
 # Device mount path
 storage1_path = /

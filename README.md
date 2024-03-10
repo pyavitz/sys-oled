@@ -1,6 +1,6 @@
 # Description
 Application to display System Status on I2C OLED display.
-This fork hopes to add out-of-the-box support for the ODROID HC4 OLED display.
+This fork hopes to add out-of-the-box support for the OLED display.
 
 ![system status](capture/luma_000001.png)
 
@@ -8,8 +8,8 @@ This fork hopes to add out-of-the-box support for the ODROID HC4 OLED display.
 ## INSTALLATION
 
 ```
-git clone https://github.com/rpardini/sys-oled-hc4.git
-cd sys-oled-hc4
+git clone https://github.com/pyavitz/sys-oled.git
+cd sys-oled
 sudo ./install.sh
 ```
 ### Configure storage info
@@ -25,7 +25,7 @@ You can edit the following lines to define for which storage devices you want to
 ```
 # Storage Device 1
 # Device name
-storage1_name = sd
+storage1_name = mmcblk
 
 # Device mount path
 storage1_path = /
