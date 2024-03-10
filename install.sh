@@ -14,9 +14,9 @@ SYSTEMD_PATH="/etc/systemd/"
 BUILD_DEPS="python3-dev python3-pip python3-setuptools python3-wheel python3-psutil libfreetype6-dev libjpeg-dev build-essential"
 RUNTIME_DEPS="python3 python3-psutil python3-luma.oled python3-rpi.gpio"
 
-if [ "$(id -u)" != "0" ]; then
-	echo "This script must be run as root!"
-	exit 1
+if [ "$USER" != "root" ]; then
+        echo "Please run this as root or with sudo privileges."
+        exit 1
 fi
 
 $EE ""
@@ -42,6 +42,7 @@ else
 	exit 0
 fi
 
+$EE ""
 $EE "Installing Dependencies ..."
 apt-get update
 
